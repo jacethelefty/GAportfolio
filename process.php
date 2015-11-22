@@ -11,18 +11,9 @@ if( isset($_POST) ){
   $time = date('H:i:s');
 
   //form data
-  $name = $_POST['name'];
   $email = $_POST['email'];
-  $inquiry = $_POST['inquiry'];
-  $message = $_POST['message'];
 
   //validate form data
-
-  //validate name is not empty
-  if(empty($name)){
-    $formok = false;
-    $errors[] = "You have not entered a name";
-  }
 
   //validate email address is not empty
   if(empty($email)){
@@ -32,17 +23,6 @@ if( isset($_POST) ){
   }elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)){
     $formok = false;
     $errors[] = "You have not entered a valid email address";
-  }
-
-  //validate message is not empty
-  if(empty($message)){
-    $formok = false;
-    $errors[] = "You have not entered a message";
-  }
-  //validate message is greater than 20 charcters
-  elseif(strlen($message) < 20){
-    $formok = false;
-    $errors[] = "Your message must be greater than 20 characters";
   }
 
   //send email if all is ok
@@ -61,11 +41,7 @@ if( isset($_POST) ){
   //what we need to return back to our form
   $returndata = array(
     'posted_form_data' => array(
-      'name' => $name,
-      'email' => $email,
-      'telephone' => $telephone,
-      'inquiry' => $inquiry,
-      'message' => $message
+      'email' => $email
     ),
     'form_ok' => $formok,
     'errors' => $errors
