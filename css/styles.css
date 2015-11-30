@@ -38,13 +38,19 @@
     font-style: normal;
 
 }
+a{
+  color: black;
+}
+
+a:visited{
+  color: #cfcfcf;
+}
+.right{
+  float: right;
+  margin-right: -65px;
+}
 body{
   position: relative;
-  background: url(../imgs/bg.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   padding:0;
   margin: 0;
   font-family: 'loveloblack';
@@ -52,16 +58,22 @@ body{
 .topBar{
   width: 100%;
   height: 60px;
-  background: #222222;
+  background: black;
   position: fixed;
   z-index: 40;
+}
+.fa-code{
+  color: #FF073D;
 }
 h1{
   color: white;
   font-size: 24px;
   line-height: 64px;
-  margin: 0 0 0 20px;
-  font-family: 'loveloline_light';
+  margin: 0 0 0 10px;
+  font-family: 'loveloblack';
+}
+h1 span i{
+  margin: 0 5px 0 80px;
 }
 .topBar ul{
   float: right;
@@ -72,8 +84,21 @@ h1{
   color: white;
   margin-right: 50px;
 }
-.main{
+.topBar ul li a{
+  text-decoration: none;
+  color: white;
+  transition: all .2s ease-in;
+}
+.topBar ul li a:hover, .topBar ul li a i:hover{
+  color: #13D4F9;
+}
+.bg{
   height: 680px;
+  background: url(../imgs/bg4.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #container1{
@@ -83,98 +108,105 @@ h1{
   position: absolute;
   top: -60px;
   left: 30%;
-
 }
-input{
+#container1 h2{
+  color: white;
+  font-size: 26px;
+  text-align: center;
+  margin-top: 30px;
+}
+#container1 h2 span{
+  color: #13D4F9;
+}
+#container1 input{
   border-radius: 0px;
   color: black;
-  background: white;
   width: 470px; height: 60px;
   position: absolute;
-  top: 410px;
-  left: 20%;
+  top: 400px;
+  left: 15%;
   z-index: 30;
-  border: 2px solid black;
+  border: 4px solid #13D4F9;
   padding-left: 20px;
   font-size: 20px;
   font-family: 'loveloblack';
 }
-.submitButton{
+#container1 .submitButton{
   width: 120px; height: 62px;
   font-size: 16px;
   float: right;
   background: black;
   color: white;
   border: none;
-  margin:2px 0 0 373px;
+  margin:4px 0 0 375px;
   font-family: 'loveloblack';
-  padding: 2px 2px;
+  padding: 2px 0px 2px 4px;
   transition: all 500ms ease-in;
 }
-.submitButton:hover{
-  color:#F4C2A7;
+#container1 .submitButton:hover{
+  color:#FF073D;
   cursor: pointer;
 }
  #circleBack{
   width: 450px;
   height: 450px;
   border-radius: 50%;
-  border: 2px solid white;
-  background: black;
+  border: 4px solid black;
+  background: white;
   position: absolute;
   top: 200px;
   left: 5.75%;
-  z-index: -5;
+  z-index: 2;
  }
   #circleBack2{
   width: 466px;
   height: 466px;
   border-radius: 50%;
-  background: black;
+  background: white;
   position: absolute;
-  top: 195px;
-  left: 5%;
-  z-index: -10;
+  top: 196px;
+  left: 5.25%;
+  z-index: 0;
  }
  #triangle-up {
-  width: 0; height: 0;
+  width: 320px; height: 260px;/*
   border-left: 200px solid transparent;
-  border-right: 200px solid transparent;
-  border-bottom: 340px solid white;
+  border-right: 200px solid transparent;*/
+  background: black;
   position: absolute;
-  top: 200px;
-  left: 4%;
+  top: 360px;
+  left: 15%;
   z-index: 10;
 }
  #triangle-upBack {
-  width: 0; height: 0;
-  border-left: 204px solid transparent;
-  border-right: 204px solid transparent;
-  border-bottom: 346px solid black;
+  width: 240px; height: 200px;/*
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;*/
+  background: white;
   position: absolute;
-  top: 200px;
-  left: 4%;
+  top: 355px;
+  left: 11%;
   z-index: 8;
 }
  #triangle-down {
-  width: 0; height: 0;
+  width: 320px; height: 200px;/*
   border-left: 200px solid transparent;
-  border-right: 200px solid transparent;
-  border-top: 340px solid black;
+  border-right: 200px solid transparent;*/
+  background: white;
   position: absolute;
-  top: 340px;
-  left: 20%;
+  top: 310px;
+  left: 34%;
   z-index: 5;
 }
  #triangle-up2 {
-  width: 0; height: 0;
-  border-left: 130px solid transparent;
-  border-right: 130px solid transparent;
-  border-bottom: 200px solid white;
+  width: 240px; height: 240px;/*
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;*/
+  background: black;
   position: absolute;
-  top: 230px;
-  left: 25%;
-  z-index: 0;
+  top: 240px;
+  left: 28%;
+  z-index: 4;
 }
 i{
   color: white;
@@ -186,6 +218,9 @@ i{
   height: 340px;
   padding: 10px 0 50px;
 }
+.key ul li:nth-of-type(1){
+  margin-left: 5px;
+}
 
 h2{
   color: black;
@@ -195,6 +230,7 @@ h2{
   width: 300px;
   text-align: center;
   margin: 50px auto 20px;
+  font-family: 'loveloblack';
 }
 #inContainer{
   width: 1100px;
@@ -213,6 +249,7 @@ h2{
   text-align: center;
   margin: 5px 5px 10px 5px;
 }
+
 .smlCircle{
   background: black;
   color: white;
@@ -224,21 +261,252 @@ h2{
   padding: 20px;
 }
 .about{
-  height: 550px;
+  height: 950px;
   background: #ffffff;
   width: 100%;
+}
+#aboutMeBlock{
+  width: 1000px;
+  padding: 0;
+  margin: 40px 0 0 220px;
+  position: relative;
+}
+.about span{
+  font-size: 24px;
+  font-weight: 700;
+}
+#aboutMeh3 span{
+  font-size: 34px;
+}
+#aboutMeh2{
+  font-size: 60px;
+  font-weight: 700;
+  float: left;
+  width: 606px;
+  font-family: 'loveloblack';
+  text-align: left;
+  margin-top:20px;
+}
+#aboutMeh3{
+  font-size: 24px;
+  font-weight: 700;
+  float: left;
+  width: 600px;
+  font-family: 'loveloblack';
+  margin-top: 0px;
+  display: inline-block;
+}
+#aboutMeP{
+  font-size: 18px;
+  font-weight: 300;
+  float: left;
+  width: 620px;
+  font-family: 'Open Sans';
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+#aboutMeBlock ul{
+  float: left;
+  width: 500px;
+  margin-top: -10px;
+}
+.lineBreak{
+  width: 1000px;
+  margin: 0 auto;
+  height: 4px;
+  background: black;
+  position: absolute;
+  top: 410px;
+}
+#skills ul{
+  width: 600px;
+  margin: -20px 0 0 0px;
+}
+#skills ul li i{
+  color: black;
+  margin: 0 8px;
+  font-size: 45px;
+}
+
+#aboutMeBlock ul li{
+  list-style: none;
+}
+.skillsh3{
+  width: 650px;
+  float: left;
+  font-size: 40px;
+}
+#shorth3{
+  width: 400px;
+  margin-top: 98px;
+}
+#skl1, #skl2, #skl3, #skl4, #skl5, #skl6, #skl7, #skl8{
+  display: inline-block;
+  height: 34px;
+  background-color: #49C2DA;
+  float: left;
+  margin: 10px 0 0 -40px;
+  padding-left: 10px;
+  font-size: 26px;
+  line-height: 38px;
+}
+#skl1{
+  width:550px;
+  float: left;
+  margin-top: -20px;
+}
+#skl2{
+  width:440px;
+}
+#skl3{
+  width:470px;
+}
+#skl4{
+  width:470px;
+}
+#skl5{
+  width:440px;
+}
+#skl6{
+  width:360px;
+}
+#skl7{
+  width:440px;
+}
+#skl8{
+  width:600px;
+}
+#skills{
+  position: absolute;
+  top: 362px;
+  left: 720px;
+  width: 0px;
+}
+#skills ul li{
+  display: inline-block;
+  margin-top: -15px;
+}
+#skills h4{
+  width: 380px;
+  font-size: 22px;
+  margin: 128px 0 0 -37px;
+  text-decoration: underline;
+  color:black;
+}
+#skills h4:hover{
+  color:#c7c7c7;
+}
+
+#skills h4 i{
+  color: black;
+  font-size: 60px;
+  margin-left: 0px;
+}
+#aboutMeImg{
+  margin: 34px 0 0 79px;
 }
 .projects{
   height: 500px;
   background: #ECECEC;
   width: 100%;
+  padding-top: 2px;
+  height: 590px;
 }
+.projects h2{
+  font-size: 60px;
+  font-weight: 700;
+  width: 306px;
+  font-family: 'loveloblack';
+  text-align: left;
+  margin-top: 40px;
+}
+.projects h3{
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 700;
+  width: 600px;
+  font-family: 'loveloblack';
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 220px;
+}
+.projects h3:nth-of-type(2){
+  margin-left: -30px;
+}
+.projects ul{
+  margin-top: -10px;
+  width: 560px;
+  margin-left: -55px;
+}
+.projects ul:nth-of-type(2){
+  float: right;
+  margin: -256px 320px 0 0;
+}
+.projects ul li{
+  list-style: none;
+  margin-left: 210px;
+  font-size: 20px;
+  line-height: 30px;
+  transition: all .5s ease-in;
+  width: 580px;
+}
+.projects ul li:hover{
+  background: #cfcfcf;
+  cursor: pointer;
+  color: white;
+}
+.projects ul li i{
+  margin-left: 5px;
+  color: #ECECEC;
+}
+.projects ul li a{
+  color: black;
+  text-decoration: none;
+}
+.projects span {
+  background: #EE1524;
+  height: 30px;
+  color: white;
+  margin-right: 20px;
+  text-align: center;
+  width: 0;
+  display: inline-block;
+  transition: 0.2s linear;
+}
+.projects ul li:hover span {
+  width: 30px;
+}
+
 .contact{
-  height: 500px;
+  height: 580px;
   background: black;
   width: 100%;
+  margin-top: -50px;
+  padding-top: 30px;
+  position: relative;
 }
-.contact h2{
+footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+}
+
+footer p{
   color: white;
+  width: 400px;
+  margin: 0 auto;
+}
+footer span{
+  font-size: 40px;
+  float: left;
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
+  opacity: 0.5;
+  transition:all .5s ease-in;
+}
+footer span:hover{
+  opacity: 1;
 }
 

@@ -8,7 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/contactform.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 
     <script src="js/modernizr.js"></script>
 
@@ -17,33 +19,50 @@
     <!--[if lt IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <div id="topAnch"></div>
 
-    <div class="topBar">
-      <h1><span><i class="fa fa-pied-piper-alt"></i></span> JASON MONTOYA</h1>
+    <div class="topBar" id="topBar">
+      <h1><span><i class="fa fa-code"></i></span> JASON MONTOYA</h1>
       <ul>
-        <li>My Key Technologies</li>
-        <li>About</li>
-        <li>Projects</li>
-        <li>Contact</li>
-        <li><i class="fa fa-envelope"></i><i class="fa fa-linkedin"></i><i class="fa fa-github"></i></li>
+        <li><a href="#keyTech">My Key Technologies</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="mailto:jacemontoya@live.com?Subject=Hello%20again" target="_top"><i class="fa fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/jacemontoya" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://github.com/jacethelefty/" target="_blank"><i class="fa fa-github"></i></a>
+        </li>
       </ul>
     </div>
-    <div class="main">
-      <div id="container1">
-        <form method="post" action="none" id="form">
-          <input type="email" name="email" placeholder="Enter Email Here to Contact Me" autocomplete="off">
-          <input type="submit"  value="Submit Email" class="submitButton" return false>Submit Email</input>
-        </form>
-        <div id="circleBack"></div>
-        <div id="circleBack2"></div>
-        <div id="triangle-up"></div>
-        <div id="triangle-upBack"></div>
-        <div id="triangle-down"></div>
-        <div id="triangle-up2"></div>
+    <div class="bg"></div>
+
+
+
+    <div id="container1">
+<!--       <form method="post" action="none" id="form">
+        <input type="email" name="email" placeholder="Enter Email Here to Contact Me" autocomplete="off">
+        <input type="submit"  value="Submit Email" class="submitButton" return false>
+      </form> -->
+
+      <div id="circleBack"></div>
+      <div id="circleBack2"></div>
+      <div id="triangle-up">
+        <h2>
+          It's not about </br>
+          being the best </br>
+          it's about </br>
+          <span>being better</span></br>
+          than you were</br>
+          <span>yesterday</span>
+        </h2>
       </div>
+      <div id="triangle-upBack"></div>
+      <div id="triangle-down"></div>
+      <div id="triangle-up2"></div>
     </div>
 
-    <div class="key">
+    <div class="key" id="keyTech">
       <h2>My Key Technologies</h2>
       <br>
       <div id="inContainer">
@@ -57,19 +76,169 @@
       </div>
     </div>
 
-    <div class="about">
-      <h2>About</h2>
+    <div class="about" id="about">
+      <div id="aboutMeBlock">
+        <h2 id="aboutMeh2">About Me</h2>
+<!--         <hr> -->
+        <h3 id="aboutMeh3">I'm a <span class="big">Front-End Designer</span> and <span class="big">Developer</span> from Seattle, Washington</h3>
+        <p id="aboutMeP">
+          I develop strong code that will last the tests of time, and I come from a family of artists with a personal strong desire to stand out from the bunch. I like to eat pizza and traveling around the world, and I enjoy listening to house music, shooting photography, and playing golf. I also have a dog named Spencer Paws who likes long walks.
+        </p>
+
+        <div class="lineBreak"></div>
+
+        <h3 class="skillsh3">My Skills</h3>
+        <ul>
+          <li><span id="skl1">HTML5/CSS3 <span class="right">85%</span></span></li>
+          <li><span id="skl2">JavaScript/jQuery <span class="right">65%</span></span></li>
+          <li><span id="skl3">Git/GitHub <span class="right">70%</span></span></li>
+          <li><span id="skl4">WordPress <span class="right">70%</span></span></li>
+          <li><span id="skl5">Adobe CS <span class="right">65%</span></li>
+          <li><span id="skl6">SQL <span class="right">50%</span></li>
+          <li><span id="skl7">eCommerce <span class="right">65%</span></li>
+          <li><span id="skl8">Pro Traveler <span class="right">90%</span></li>
+        </ul>
+
+        <div id="skills">
+          <a href="resume.pdf"><h4>Download My Resume <i class="fa fa-file-text-o"></i></h4></a>
+        </div>
+      </div>
+      <img id="aboutMeImg" src="imgs/headshot.jpg" alt="Head Shot" width="300" height="300">
+
+
     </div>
-    <div class="projects">
+
+    <div class="projects" id="projects">
       <h2>Projects</h2>
+      <h3>Personal Projects</h3><h3>Code Fellows Projects</h3>
+      <ul>
+        <li><span><i class="fa fa-arrow-right"></i></span>
+          <a href="http://clarkmfrs.com/" target="_blank">2015 - clarkmfrs.com - (full development)</a>
+        </li>
+        <li><span><i class="fa fa-arrow-right"></i></span>
+          <a href="http://www.meingdesigns.com/" target="_blank">2015 - meingdesigns.com - (WordPress)</a>
+        </li>
+        <li><span><i class="fa fa-arrow-right"></i></span>
+          <a href="http://dsmapparel.com/" target="_blank">2014 - dsmapparel.com - (WordPress)</a>
+        </li>
+        <li><span><i class="fa fa-arrow-right"></i></span>
+          <a href="https://pup-power.com/" target="_blank">2013 - pup-power.com - (WordPress)</a>
+        </li>
+        <li><span><i class="fa fa-arrow-right"></i></span>
+          <a href="http://www.gr8fundraisers.org/" target="_blank">2013 - gr8fundraisers.org - (standards update)</a>
+        </li>
+        <li><span><i class="fa fa-arrow-right"></i></span>
+          <a href="http://jacemontoya.com/" target="_blank">2013 - jacemontoya.com - (WordPress)</a>
+        </li>
+        <li><span><i class="fa fa-arrow-right"></i></span>
+          <a href="http://absolute206ink.com/" target="_blank">2012 - absolute206ink.com - (full development)</a>
+        </li>
+        <li><span><i class="fa fa-arrow-right"></i></span>
+          <a href="http://emeraldcitysewer.com/" target="_blank">2012 - emeraldcitysewer.com - (full development)</a></li>
+      </ul>
+      <ul>
+        <li><span><i class="fa fa-arrow-right"></i></span>
+          <a href="https://jacethelefty.github.io/guessbattleUI/" target="_blank"> jacethelefty.github.io/guessbattleUI/</a>
+        </li>
+        <li><span><i class="fa fa-arrow-right"></i></span>
+          <a href="https://jacethelefty.github.io/makeYourMatch/" target="_blank">jacethelefty.github.io/makeYourMatch/</a>
+        </li>
+        <li><span><i class="fa fa-arrow-right"></i></span>
+          <a href="https://jacethelefty.github.io/delicious/" target="_blank"> jacethelefty.github.io/delicious/</a>
+        </li>
+        <li><span><i class="fa fa-arrow-right"></i></span>
+          <a href="https://montoyabandnamegen.herokuapp.com/" target="_blank">montoyabandnamegen.herokuapp.com/</a>
+        </li>
+        <li><span><i class="fa fa-arrow-right"></i></span>
+          <a href="http://jacethelefty.github.io/sharpsquiz/" target="_blank">jacethelefty.github.io/sharpsquiz/</a>
+        </li>
+      </ul>
     </div>
-    <div class="contact">
-      <h2>Contact</h2>
+    <div class="contact" id="contact">
+
+    <div id="contact-form">
+
+    <h2>Contact</h2>
+
+    <div class="getSoc">
+      <h3 class="contacth3">Let's Get Social</h3>
+      <ul>
+        <li><a href="mailto:jacemontoya@live.com?Subject=Hello%20again" target="_top"><i class="fa fa-envelope"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/jacemontoya" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/jacethelefty/" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://twitter.com/montoyathelefty" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/jandcabroad/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+      <p><span class="blackSpan">email</span>:&nbsp;jason@jacemontoya.com</p>
+      <p><span class="blackSpan">phone</span>:&nbsp;206.851.8762</p>
     </div>
+    <br>
+    <br>
+    <div class="contact-form-wrap">
+
+    <?php
+      //init variables
+      $cf = array();
+      $sr = false;
+
+      if(isset($_SESSION['cf_returndata'])){
+          $cf = $_SESSION['cf_returndata'];
+          $sr = true;
+      }
+    ?>
+
+    <ul id="errors" class="<?php echo ($sr && !$cf['form_ok']) ? 'visible' : ''; ?>">
+        <li id="info">There were some problems with your form submission:</li>
+        <?php
+        if(isset($cf['errors']) && count($cf['errors']) > 0) :
+            foreach($cf['errors'] as $error) :
+        ?>
+        <li><?php echo $error ?></li>
+        <?php
+            endforeach;
+        endif;
+        ?>
+    </ul>
+    <p id="success" class="<?php echo ($sr && $cf['form_ok']) ? 'visible' : ''; ?>">Thanks for your message! We will get back to you ASAP!</p>
+
+    <form method="post" action="process.php" id="form">
+      <label for="name" class="topLabel">Name: <span class="required">*</span></label>
+      <input type="text" id="name" name="name" placeholder="John Doe" required="required" />
+
+      <label for="email">Email Address: <span class="required">*</span></label>
+      <input type="email" id="email" name="email" placeholder="johndoe@example.com" required="required" />
+
+      <label for="inquiry">Inquiry: </label>
+      <select id="inquiry" name="inquiry">
+          <option value="general" <?php echo ($sr && !$cf['form_ok'] && $cf['posted_form_data']['inquiry'] == 'general') ? "selected='selected'" : '' ?>General</option>
+          <option value="hireMe" <?php echo ($sr && !$cf['form_ok'] && $cf['posted_form_data']['inquiry'] == 'hireMe') ? "selected='selected'" : '' ?>Hire Me</option>
+          <option value="testemonial" <?php echo ($sr && !$cf['form_ok'] && $cf['posted_form_data']['inquiry'] == 'testemonial') ? "selected='selected'" : '' ?>Testemonial</option>
+      </select>
+
+      <label for="message">Message: <span class="required">*</span></label>
+      <textarea id="message" name="message" placeholder="Your message must be greater than 20 characters" required="required" data-minlength="20"></textarea>
+
+      <span id="loading"></span>
+      <input type="submit" value="SUBMIT" id="submit-button" />
+      <br />
+      <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
+
+    </form>
+
+    <?php unset($_SESSION['cf_returndata']); ?>
+
+    </div>
+    </div>
+
+    <footer>
+      <p>Copyright &copy 2015 - jacemontoya.com</p>
+      <span id="backToTop"><a href="#topAnch"><i class="fa fa-arrow-up"></i></a></span>
+    </footer>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-    <script src="js/app.js"></script>
+    <script src="app.js"></script>
 
   </body>
 </html>
