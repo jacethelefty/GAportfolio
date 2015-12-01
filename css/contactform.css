@@ -46,7 +46,12 @@
     .contact ul li i{
       font-size: 30px;
       margin: 5px;
+      transition: all 0.25s ease-in;
     }
+    .contact ul li i:hover{
+      color: #FF073D;
+    }
+
     .blackSpan{
       background-color: white;
       color: black;
