@@ -271,6 +271,15 @@ h2{
   margin: 40px 0 0 220px;
   position: relative;
 }
+.aboutLeft{
+  position: relative;
+  float: left;
+  width: 60%;
+}
+.aboutRight{
+  float: right;
+  width: 30%;
+}
 .about span{
   font-size: 24px;
   font-weight: 700;
@@ -340,40 +349,72 @@ h2{
   width: 400px;
   margin-top: 98px;
 }
+#displayBtn{
+  border: none;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 88px;
+  left: 0;
+  font-family: 'loveloblack', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
 #skl1, #skl2, #skl3, #skl4, #skl5, #skl6, #skl7, #skl8{
-  display: inline-block;
+  position: absolute;
+  display: none;
   height: 34px;
   background-color: #49C2DA;
   float: left;
-  margin: 10px 0 0 -40px;
+  margin: 10px 0 5px 0;
   padding-left: 10px;
   font-size: 26px;
   line-height: 38px;
+  overflow:hidden;
 }
 #skl1{
+  top: 140px;
+  left: 0;
   width:550px;
   float: left;
   margin-top: -20px;
 }
+.right{
+  margin-right: 5px;
+}
 #skl2{
+  top: 155px;
+  left: 0;
   width:440px;
 }
 #skl3{
+  top: 200px;
+  left: 0;
   width:470px;
 }
 #skl4{
+  top: 245px;
+  left: 0;
   width:470px;
 }
 #skl5{
+  top: 290px;
+  left: 0;
   width:440px;
 }
 #skl6{
+  top: 335px;
+  left: 0;
   width:360px;
 }
 #skl7{
+  top: 380px;
+  left: 0;
   width:440px;
 }
 #skl8{
+  top: 425px;
+  left: 0;
   width:600px;
 }
 #skills{
@@ -382,28 +423,25 @@ h2{
   left: 720px;
   width: 0px;
 }
-#skills ul li{
-  display: inline-block;
-  margin-top: -15px;
-}
-#skills h4{
+
+#resume h4{
   width: 380px;
   font-size: 22px;
-  margin: 128px 0 0 -37px;
+  margin: 50px 0 0 -37px;
   text-decoration: underline;
   color:black;
 }
-#skills h4:hover{
+#resume h4:hover{
   color:#c7c7c7;
 }
 
-#skills h4 i{
+#resume h4 i{
   color: black;
   font-size: 60px;
   margin-left: 0px;
 }
 #aboutMeImg{
-  margin: 34px 0 0 79px;
+  margin: 34px 0 0 0px;
 }
 .projects{
   height: 500px;
